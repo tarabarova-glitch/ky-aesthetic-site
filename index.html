@@ -468,7 +468,7 @@ const IMG={
  p1:"photo-1781344116880-029945a42b75", p2:"photo-1707539160277-e39464517645", p3:"photo-1601049541067-adaf79e7408e",
  p4:"photo-1608571424237-381e6b43a2a7", p5:"photo-1633423411797-9a7317784d2b", cream:"photo-1585945037805-5fd82c2e60b1", botox2:"photo-1761819921052-2c34973e012c", boost:"photo-1761718210089-ba3bb5ccb54f", lipsw:"photo-1790575169504-488dec84597a", rf2:"photo-1713085085470-fba013d67e65"
 };
-const LOCAL={hero:"images/kateryna-hero.webp",meet:"images/kateryna-meet.webp",about:"images/kateryna-about.webp",lipsw:"images/lips.webp",botox2:"images/botox.webp",rf2:"images/rf.webp",boost:"images/boosters.webp",pr1:"images/pr1.webp",pr2:"images/pr2.webp",pr3:"images/pr3.webp",pr4:"images/pr4.webp",pr5:"images/pr5.webp"};
+const LOCAL={hero:"images/kateryna-hero.webp?v=20261120",meet:"images/kateryna-meet.webp?v=20261120",about:"images/kateryna-about.webp?v=20261120",lipsw:"images/lips.webp?v=20261120",botox2:"images/botox.webp?v=20261120",rf2:"images/rf.webp?v=20261120",boost:"images/boosters.webp?v=20261120",pr1:"images/pr1.webp?v=20261120",pr2:"images/pr2.webp?v=20261120",pr3:"images/pr3.webp?v=20261120",pr4:"images/pr4.webp?v=20261120",pr5:"images/pr5.webp?v=20261120"};
 const src=(k,w)=>(typeof DATA!=="undefined"&&DATA[k])||LOCAL[k]||U(IMG[k],w);
 const ph=(key,w=1200,label="")=>`<div class="ph">${key?`<img src="${src(key,w)}" alt="" loading="lazy" onerror="this.remove()">`:""}${label?`<span class="pn cap">${label}</span>`:""}</div>`;
 
@@ -664,7 +664,7 @@ const tops=[
 ];
 const PAGES=["home","about","services","prices","certificates","results","reviews","faq","cosmetics","contacts"];
 let lang="en",filter="all",pcat="inj",jump=null,cfil="all";
-const csrc=id=>(typeof DATA!=="undefined"&&DATA["cert_"+id])||`images/certs/${id}.webp`;
+const csrc=id=>(typeof DATA!=="undefined"&&DATA["cert_"+id])||`images/certs/${id}.webp?v=20261120`;
 try{const s=localStorage.getItem("ky-lang");if(s==="ru"||s==="en")lang=s;}catch(e){}
 const L=o=>typeof o==="string"?o:o[lang],T=()=>t[lang];
 const draft=()=>"";
