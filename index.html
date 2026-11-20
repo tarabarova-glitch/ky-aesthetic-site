@@ -468,7 +468,7 @@ const IMG={
  p1:"photo-1781344116880-029945a42b75", p2:"photo-1707539160277-e39464517645", p3:"photo-1601049541067-adaf79e7408e",
  p4:"photo-1608571424237-381e6b43a2a7", p5:"photo-1633423411797-9a7317784d2b", cream:"photo-1585945037805-5fd82c2e60b1", botox2:"photo-1761819921052-2c34973e012c", boost:"photo-1761718210089-ba3bb5ccb54f", lipsw:"photo-1790575169504-488dec84597a", rf2:"photo-1713085085470-fba013d67e65"
 };
-const LOCAL={hero:"images/kateryna-hero.webp",meet:"images/kateryna-meet.webp",about:"images/kateryna-about.webp",lipsw:"images/lips.webp",botox2:"images/botox.webp",rf2:"images/rf.webp",boost:"images/boosters.webp",p1:"images/p1.webp",p2:"images/p2.webp",p3:"images/p3.webp",p4:"images/p4.webp",p5:"images/p5.webp",cream:"images/cream.webp"};
+const LOCAL={hero:"images/kateryna-hero.webp",meet:"images/kateryna-meet.webp",about:"images/kateryna-about.webp",lipsw:"images/lips.webp",botox2:"images/botox.webp",rf2:"images/rf.webp",boost:"images/boosters.webp",pr1:"images/pr1.webp",pr2:"images/pr2.webp",pr3:"images/pr3.webp",pr4:"images/pr4.webp",pr5:"images/pr5.webp"};
 const src=(k,w)=>(typeof DATA!=="undefined"&&DATA[k])||LOCAL[k]||U(IMG[k],w);
 const ph=(key,w=1200,label="")=>`<div class="ph">${key?`<img src="${src(key,w)}" alt="" loading="lazy" onerror="this.remove()">`:""}${label?`<span class="pn cap">${label}</span>`:""}</div>`;
 
@@ -493,7 +493,7 @@ const t={
   certsLead:"Medical degree, courses, product trainings and congresses Kateryna has completed.",cfl:{all:"All",diploma:"Education",course:"Courses",congress:"Congresses"},
   resultsLead:"Results from the studio, published with each client’s consent.",all2:"All",before:"Before",after:"After",
   reviewsLead:"In clients’ own words.",faqLead:"The questions we hear most often. Anything else, ask in Instagram direct.",
-  cosLead:"Professional skincare used in the studio and recommended for home care between treatments.",
+  cosLead:"Swiss professional skincare by Cholley, used in the studio and recommended for home care between treatments.",
   contactsLead:"By appointment only. Book online, call, or message on Instagram.",
   addr:"Studio",phone:"Phone",web:"Website",insta:"Instagram",hoursL:"Hours",openMap:"Open in Google Maps",
   draftPh:"Placeholder, replace before launch",photo:"Photo",
@@ -521,7 +521,7 @@ const t={
   certsLead:"Медицинское образование, курсы, обучения по препаратам и конгрессы Катерины.",cfl:{all:"Все",diploma:"Образование",course:"Курсы",congress:"Конгрессы"},
   resultsLead:"Результаты кабинета, опубликованные с согласия клиентов.",all2:"Все",before:"До",after:"После",
   reviewsLead:"Своими словами клиентов.",faqLead:"Самые частые вопросы. Если вашего нет, напишите в Instagram direct.",
-  cosLead:"Профессиональная косметика, с которой мы работаем в кабинете и которую рекомендуем для домашнего ухода между процедурами.",
+  cosLead:"Швейцарская профессиональная косметика Cholley: работаем с ней в кабинете и рекомендуем для домашнего ухода между процедурами.",
   contactsLead:"Только по записи. Запишитесь онлайн, позвоните или напишите в Instagram.",
   addr:"Кабинет",phone:"Телефон",web:"Сайт",insta:"Instagram",hoursL:"Часы",openMap:"Открыть в Google Maps",
   draftPh:"Заглушка, заменить перед запуском",photo:"Фото",
@@ -646,13 +646,13 @@ const certs=[
 
 const results=[["lips",{en:"Lips, 1 ml",ru:"Губы, 1 мл"}],["lips",{en:"Lips, 0.5 ml",ru:"Губы, 0,5 мл"}],["botox",{en:"Forehead and frown line",ru:"Лоб и межбровье"}],["botox",{en:"Crow’s feet",ru:"«Гусиные лапки»"}],["rf",{en:"Lower face, course of 4",ru:"Нижняя треть, курс 4"}],["rf",{en:"Eyes, course of 3",ru:"Зона глаз, курс 3"}]];
 const products=[
- ["p1",{en:"Skeyndor cleansing",ru:"Очищение Skeyndor"},{en:"Gentle daily cleansing that keeps the skin barrier intact.",ru:"Мягкое ежедневное очищение без повреждения барьера кожи."}],
- ["p2",{en:"Hydrating serums",ru:"Увлажняющие сыворотки"},{en:"Hyaluronic care between treatments, especially after fillers and boosters.",ru:"Гиалуроновый уход между процедурами, особенно после филлеров и бустеров."}],
- ["p3",{en:"Daily SPF",ru:"SPF на каждый день"},{en:"Protects results and prevents pigmentation after peels and resurfacing.",ru:"Защищает результат и предотвращает пигментацию после пилингов и шлифовки."}],
- ["p4",{en:"Sensitive skin line",ru:"Линия для чувствительной кожи"},{en:"Calms redness and supports recovery after procedures.",ru:"Успокаивает покраснение и помогает восстановлению после процедур."}],
- ["p5",{en:"Anti-age night care",ru:"Ночной антивозрастной уход"},{en:"Supports collagen between RF sessions.",ru:"Поддерживает выработку коллагена между сеансами RF."}],
- ["cream",{en:"Lip care",ru:"Уход за губами"},{en:"Keeps lips soft and hydrated after augmentation.",ru:"Сохраняет губы мягкими и увлажнёнными после увеличения."}]
+ ["pr1",{en:"Crème Nutrisystème 24 Heures",ru:"Крем Nutrisystème 24 часа"},{en:"24-hour hydration with vitamins A and E. Softens and smooths the skin, restores its hydrolipid balance and helps prevent age spots.",ru:"Увлажнение на 24 часа с витаминами A и E. Смягчает и выравнивает кожу, восстанавливает гидролипидный баланс и помогает предотвратить пигментацию."}],
+ ["pr2",{en:"Bioregene Crème Peaux Sensibles",ru:"Bioregene для чувствительной кожи"},{en:"For sensitive, dry and reactive skin. Restores the lipid barrier, calms redness and irritation, and returns comfort and elasticity.",ru:"Для чувствительной, сухой и реактивной кожи. Восстанавливает липидный барьер, снимает покраснение и раздражение, возвращает комфорт и упругость."}],
+ ["pr3",{en:"Crème Tenseur Suractivée",ru:"Подтягивающий крем Tenseur Suractivée"},{en:"Intensive lifting cream for mature skin. Firms facial contours and supports collagen and elastin production. From 30 years of age.",ru:"Интенсивный лифтинг-крем для зрелой кожи. Подтягивает овал лица и поддерживает выработку коллагена и эластина. С 30 лет."}],
+ ["pr4",{en:"Bioregene Crème Contour des Yeux",ru:"Bioregene для контура глаз"},{en:"Eye contour cream that smooths fine lines, deeply moisturizes, relieves puffiness and supports skin tone around the eyes.",ru:"Крем для кожи вокруг глаз: разглаживает мелкие морщины, глубоко увлажняет, снимает отёчность и поддерживает тонус."}],
+ ["pr5",{en:"Bioregene Crème Anti-Cernes",ru:"Bioregene против тёмных кругов"},{en:"For dark circles and puffiness under the eyes. Vitamins A, E, C and hyaluronic acid hydrate and refresh; arbutin brightens.",ru:"От тёмных кругов и отёков под глазами. Витамины A, E, C и гиалуроновая кислота увлажняют и освежают, арбутин осветляет."}]
 ];
+
 
 
 const SVC_IMG={lips:{k:"lipsw",pos:"53% 50%"},botox:{k:"botox2",pos:"50% 43%"},rf:{k:"rf2",pos:"50% 40%"},boost:{k:"boost",pos:"40% 50%"}};
@@ -694,7 +694,7 @@ const views={
     <p class="sub" data-r="2">${T().heroSub}</p>
     <div class="acts" data-r="3">${book("btn")}<a class="ul cap" href="#services" style="color:var(--soft)">${T().seeAll}</a></div>
     <p class="who" data-r="4">Kateryna Yaryhina · ${T().aboutRole}</p></div>
-   <div class="hero-photo"><img src="${src("hero",1200)}" alt="Kateryna Yaryhina" width="860" height="961"></div>
+   <div class="hero-photo"><img src="${src("hero",1200)}" alt="Kateryna Yaryhina" width="1508" height="1685"></div>
   </div><span class="scroll" aria-hidden="true"></span></div>
 
   <section class="band"><div class="wrap quote"><span class="vline" data-r></span><blockquote data-r>${T().quote}</blockquote><span class="by" data-r="2"><b>Kateryna Yaryhina</b> · ${T().quoteLab}</span></div></section>
@@ -722,7 +722,7 @@ const views={
      <a class="vrow" href="https://www.google.com/maps/search/?api=1&query=69+Kempster+Ave,+Ottawa,+ON+K2B+6M2" target="_blank" rel="noopener"><span class="k">${T().addr}</span><span class="v">69 Kempster Ave, Ottawa, ON K2B 6M2</span></a>
      <div class="vrow static"><span class="k">${T().hoursL}</span><span class="v"><span class="hours">${T().hrs.map(h=>`<span>${h[0]}</span><span>${h[1]}</span>`).join("")}</span></span></div>
      <div class="vcta"><a class="circ d-only" href="${BOOK}" target="_blank" rel="noopener">${T().bookVisit}<span class="ar"></span></a><a class="btn m-only" href="${BOOK}" target="_blank" rel="noopener">${T().bookVisit}</a><a class="ul cap" href="#prices" style="color:var(--soft)">${T().seePrices}</a></div></div></div></section>`,
- about:()=>head("about","",false)+`<section style="padding-bottom:var(--sec)"><div class="wrap about"><div class="meet" style="display:block"><div class="pic photo wipe"><img src="${src("about",1000)}" alt="Kateryna Yaryhina" style="object-position:50% 12%"></div></div><div class="b"><span class="cap muted" data-r>${T().aboutRole}</span><p class="q" data-r>${T().aboutQ}</p><p data-r="2" style="color:var(--soft)">${T().aboutP}</p><dl class="tbl" data-r="3">${T().creds.map(c=>`<div><dt>${c[0]}</dt><dd>${c[1]}</dd></div>`).join("")}</dl>${draft()}<div class="acts about-acts">${book("btn")}<a class="ul cap" href="#certificates" style="color:var(--soft)">${T().seeCerts}</a></div></div></div></section>`,
+ about:()=>head("about","",false)+`<section style="padding-bottom:var(--sec)"><div class="wrap about"><div class="meet" style="display:block"><div class="pic photo wipe"><img src="${src("about",1000)}" alt="Kateryna Yaryhina" style="object-position:50% 25%"></div></div><div class="b"><span class="cap muted" data-r>${T().aboutRole}</span><p class="q" data-r>${T().aboutQ}</p><p data-r="2" style="color:var(--soft)">${T().aboutP}</p><dl class="tbl" data-r="3">${T().creds.map(c=>`<div><dt>${c[0]}</dt><dd>${c[1]}</dd></div>`).join("")}</dl>${draft()}<div class="acts about-acts">${book("btn")}<a class="ul cap" href="#certificates" style="color:var(--soft)">${T().seeCerts}</a></div></div></div></section>`,
  services:()=>page("services",T().svcLead,false,
   svcs.map((s,i)=>`<article class="svc" id="svc-${s.id}"><div class="wipe">${(()=>{const o=SVC_IMG[s.id]||{k:s.img,pos:"50% 50%"};return img(o.k,1100).replace("<img ",`<img style="object-position:${o.pos}" `)})()}</div><div class="b" data-rv><span class="no">0${i+1}</span><h2 class="H">${lines(L(s.name))}</h2><p class="tg" data-r>${L(s.tag)}</p><div class="for" data-r><b>${T().forWhom}</b>${L(s.for)}</div><p data-r>${L(s.what)}</p><div data-r>${facts(s)}</div><div class="buy" data-r><span class="from">${T().from} ${s.from}${s.unit?` <span class="cap muted">${T().unit}</span>`:""}</span>${book("btn",T().bookTx)}</div></div></article>`).join("")+
   `<div class="shead" data-rv><h2 class="H">${lines(T().other)}</h2></div><div class="nlist">${minor.map((m,i)=>`<article data-r><span class="n">${String(i+1).padStart(2,"0")}</span><div><h3>${L(m[0])}</h3><p>${L(m[1])}</p></div></article>`).join("")}</div><div style="margin-top:44px"><a class="circ" href="#prices">${T().nav.prices}<span class="ar"></span></a></div>`),
